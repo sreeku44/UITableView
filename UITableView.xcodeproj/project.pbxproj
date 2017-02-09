@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		DD17DEEF1E4B96E80041994A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DEEE1E4B96E80041994A /* main.m */; };
 		DD17DEF21E4B96E80041994A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DEF11E4B96E80041994A /* AppDelegate.m */; };
-		DD17DEF51E4B96E80041994A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DEF41E4B96E80041994A /* ViewController.m */; };
 		DD17DEF81E4B96E80041994A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17DEF61E4B96E80041994A /* Main.storyboard */; };
 		DD17DEFA1E4B96E80041994A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD17DEF91E4B96E80041994A /* Assets.xcassets */; };
 		DD17DEFD1E4B96E80041994A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD17DEFB1E4B96E80041994A /* LaunchScreen.storyboard */; };
+		DD17DF0C1E4BABFF0041994A /* TaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DF0B1E4BABFF0041994A /* TaskTableViewController.m */; };
+		DD17DF0F1E4BB2BD0041994A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DF0E1E4BB2BD0041994A /* Task.m */; };
+		DD17DF121E4CD7500041994A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17DF111E4CD7500041994A /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD17DEEA1E4B96E80041994A /* 2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD17DEEA1E4B96E80041994A /* UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD17DEEE1E4B96E80041994A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD17DEF01E4B96E80041994A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD17DEF11E4B96E80041994A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD17DEF31E4B96E80041994A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DD17DEF41E4B96E80041994A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DD17DEF71E4B96E80041994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD17DEF91E4B96E80041994A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD17DEFC1E4B96E80041994A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD17DEFE1E4B96E80041994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD17DF0A1E4BABFF0041994A /* TaskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskTableViewController.h; sourceTree = "<group>"; };
+		DD17DF0B1E4BABFF0041994A /* TaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewController.m; sourceTree = "<group>"; };
+		DD17DF0D1E4BB2BD0041994A /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		DD17DF0E1E4BB2BD0041994A /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		DD17DF101E4CD7500041994A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD17DF111E4CD7500041994A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +48,7 @@
 		DD17DEE11E4B96E80041994A = {
 			isa = PBXGroup;
 			children = (
-				DD17DEEC1E4B96E80041994A /* 2017 */,
+				DD17DEEC1E4B96E80041994A /* UITableView */,
 				DD17DEEB1E4B96E80041994A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,26 +56,31 @@
 		DD17DEEB1E4B96E80041994A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD17DEEA1E4B96E80041994A /* 2017.app */,
+				DD17DEEA1E4B96E80041994A /* UITableView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD17DEEC1E4B96E80041994A /* 2017 */ = {
+		DD17DEEC1E4B96E80041994A /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
 				DD17DEF01E4B96E80041994A /* AppDelegate.h */,
 				DD17DEF11E4B96E80041994A /* AppDelegate.m */,
-				DD17DEF31E4B96E80041994A /* ViewController.h */,
-				DD17DEF41E4B96E80041994A /* ViewController.m */,
 				DD17DEF61E4B96E80041994A /* Main.storyboard */,
 				DD17DEF91E4B96E80041994A /* Assets.xcassets */,
 				DD17DEFB1E4B96E80041994A /* LaunchScreen.storyboard */,
 				DD17DEFE1E4B96E80041994A /* Info.plist */,
 				DD17DEED1E4B96E80041994A /* Supporting Files */,
+				DD17DF0A1E4BABFF0041994A /* TaskTableViewController.h */,
+				DD17DF0D1E4BB2BD0041994A /* Task.h */,
+				DD17DF0E1E4BB2BD0041994A /* Task.m */,
+				DD17DF0B1E4BABFF0041994A /* TaskTableViewController.m */,
+				DD17DF101E4CD7500041994A /* ViewController.h */,
+				DD17DF111E4CD7500041994A /* ViewController.m */,
 			);
-			path = 2017;
-			sourceTree = "<group>";
+			name = UITableView;
+			path = "/Users/sreeku44/Documents/TIY iOS Projects/UITableView/2017";
+			sourceTree = "<absolute>";
 		};
 		DD17DEED1E4B96E80041994A /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -82,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD17DEE91E4B96E80041994A /* 2017 */ = {
+		DD17DEE91E4B96E80041994A /* UITableView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD17DF011E4B96E80041994A /* Build configuration list for PBXNativeTarget "2017" */;
+			buildConfigurationList = DD17DF011E4B96E80041994A /* Build configuration list for PBXNativeTarget "UITableView" */;
 			buildPhases = (
 				DD17DEE61E4B96E80041994A /* Sources */,
 				DD17DEE71E4B96E80041994A /* Frameworks */,
@@ -94,9 +105,9 @@
 			);
 			dependencies = (
 			);
-			name = 2017;
+			name = UITableView;
 			productName = 2017;
-			productReference = DD17DEEA1E4B96E80041994A /* 2017.app */;
+			productReference = DD17DEEA1E4B96E80041994A /* UITableView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DD17DEE51E4B96E80041994A /* Build configuration list for PBXProject "2017" */;
+			buildConfigurationList = DD17DEE51E4B96E80041994A /* Build configuration list for PBXProject "UITableView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -127,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD17DEE91E4B96E80041994A /* 2017 */,
+				DD17DEE91E4B96E80041994A /* UITableView */,
 			);
 		};
 /* End PBXProject section */
@@ -150,9 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD17DEF51E4B96E80041994A /* ViewController.m in Sources */,
+				DD17DF0F1E4BB2BD0041994A /* Task.m in Sources */,
 				DD17DEF21E4B96E80041994A /* AppDelegate.m in Sources */,
+				DD17DF0C1E4BABFF0041994A /* TaskTableViewController.m in Sources */,
 				DD17DEEF1E4B96E80041994A /* main.m in Sources */,
+				DD17DF121E4CD7500041994A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD17DEE51E4B96E80041994A /* Build configuration list for PBXProject "2017" */ = {
+		DD17DEE51E4B96E80041994A /* Build configuration list for PBXProject "UITableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD17DEFF1E4B96E80041994A /* Debug */,
@@ -302,13 +315,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD17DF011E4B96E80041994A /* Build configuration list for PBXNativeTarget "2017" */ = {
+		DD17DF011E4B96E80041994A /* Build configuration list for PBXNativeTarget "UITableView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD17DF021E4B96E80041994A /* Debug */,
 				DD17DF031E4B96E80041994A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

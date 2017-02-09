@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  2017
+//  UITableView
 //
-//  Created by Sreekala Santhakumari on 2/8/17.
+//  Created by Sreekala Santhakumari on 2/9/17.
 //  Copyright © 2017 Klas. All rights reserved.
 //
 
@@ -10,6 +10,4 @@
 
 @interface ViewController : UIViewController
 
-
 @end
-
